@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="RandomGen.css">
+</head>
+<body>
+  <h1>Random Password Generator</h1>  
+
+  
+
+    <h3 class="choose">Choose the characters you want your password to contain. But you must SELECT one of the characters before you get a RANDOM password.</h3>
+<div class="container">
+    <label for="" class="chara">How many character do you want your password to have: </label>
+    <input type="number" min="3" max="25"  id="length">
+
+    <br>
+
+    <br>
+
+    <input type="checkbox" id="IncludeNumber"> 
+    <label for="">Numbers</label><br>
+    <input type="checkbox" id="IncludeLower">
+    <label for="">Lowercase</label><br>
+    <input type="checkbox" id="IncludeUpper">
+    <label for="">Uppercase</label><br>
+    <input type="checkbox" id="IncludeSymbol">
+    <label for="">Symbols</label><br>
+ 
+    <button type="button" id="GeneratePas">Generate</button>
+
+
+<div id="generatedPass"></div>
+<button onclick="copyText()">Copy Text</button>
+<input type="text" id="PassW">
+</div>
+
+
+
+<p id="copyStatus"></p>
+
+
+
+    <script src="RandomGen.js"></script>
+</body>
+</html>
